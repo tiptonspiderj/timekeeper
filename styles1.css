@@ -1,0 +1,227 @@
+﻿/* 
+   Tipton's Employee Time Recorder
+   Filename: styles1.css
+
+   Author: Jeremy Tipton  
+   Date:  10/24/2017   
+  HTML5 and CSS3 Homework Midterm Project SDEV 250
+ */
+
+/* reset styles */
+html {
+   font-size: 20px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, ul, fieldset, form, input, label, legend, textarea, tr, th, table {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+ul {
+   list-style-type: none;
+}
+
+/* body and page container */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+   border-left: 3px solid black;
+   border-right: 3px solid black;
+   position: relative;
+   border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   left: auto;
+   right: 1em;
+   top: 1em;
+   background-color: white;
+   color: #082008;
+   z-index: 2;
+}
+
+/* header section */
+header {
+   padding: 0.5em;
+   background-color: #082008;
+   border-top-left-radius: 22px;
+}
+h1  {
+   margin: 0 auto;
+   display: block;
+   color: white;
+   text-align: center;
+}
+
+/* main content */
+article {
+   padding: 2%;
+   background-color: linen;
+   overflow: auto;
+}
+article h2 {
+   margin-bottom: 0.6em;
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-size: 1.6em;
+   line-height: 2em;
+   font-weight: 400;
+   text-align: center;
+}
+article h3 {
+   margin: 0 0 1em 1em;
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-size: 1.2em;
+   clear: right;
+   text-align: center;
+}
+article p {
+   margin: 0 2em 1em;
+}
+
+/* form styles */
+form {
+	padding: 0.5em;
+	background-color: #082008;
+}
+
+/* fieldset styles */
+fieldset {
+	margin-bottom: 0.5em;
+	padding: 2.5em 2% 0.5em;
+	position: relative;
+	background-color: #93AD78;
+}
+fieldset fieldset {
+	padding-top: 0.4em;
+	border: 2px solid #082008;
+}
+form fieldset legend {
+	font-size: 1.25em;
+	font-family: "PTSansCaption", "Georgia", "Times New Roman", "Times", serif;
+	position: absolute;
+	top: 0.6em;
+}
+form fieldset fieldset legend {
+	position: relative;
+	top: 0;
+}
+.Clock-in  {
+	margin-left: 20px;
+	margin-right: 430px;
+	
+}
+.checkout {
+	width: 40%;
+	float: right;
+}
+.login {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.submit {
+	padding: 0.5em;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/* main content tables */
+table {
+	width: 94.5%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-left: 20px;
+	margin-right: 20px;	
+}
+td, th {
+	border: 1px solid black;
+	font-size: 1.3em;
+	padding: 0.2em;
+	text-align: center;	
+}
+
+/* text field styles */
+input, textarea {
+	padding: 0.2em 0.2em 0.2em 0.2em;
+	font-size: 1em;
+}
+textarea {
+	width: 99%;
+	display: block;
+}
+.contactinfo input {
+	position: absolute;
+	left: 5em;
+}
+#employeeinput {
+	width: 4em;
+}
+#passwordinput {
+	width: 10em;
+}
+#clockin  {
+	margin-left: 10px;
+	font-size: 1em;	
+}
+#clockout {
+	margin-left: 10px;
+	font-size: 1em;
+	display: none;
+}
+#login {
+font-size: 1em;
+text-align: center;
+margin-left: 9em;
+}	
+#submit {
+	font-family: "PTSansCaption", "Georgia", "Times New Roman", "Times", serif;
+	background-color: #e3d5ba;
+	font-size: 1.25em;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+ 
+/* label styles */
+label {
+	margin-bottom: 02em;
+	line-height: 1.6em;
+}
+
+/* footer section */
+footer {
+   padding: 10px;
+   text-align: center;
+   color: white;
+   background-color: #082008;
+   border-bottom-right-radius: 22px;
+}
+
+/* print styles */
+@media print {
+   article {
+      width: 100%;
+   }
+   article, body, .container, footer {
+      border: 0;
+      color: rgb(0,0,0);
+      background-color: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 0.75in;
+}
