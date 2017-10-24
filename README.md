@@ -1,17 +1,17 @@
-
+ 
 # Employee Time Keeper
 
 ## Synopsis
 
-The purpose of this webpage is to validate an Employee's ID and password.  Once the credentials are validated, you may login.  Next the webpage will display any the times the employee has clocked in/out.  Next, the page will update real time when you clock in/out.  Though it's not connected to anything, the submit button is included to refresh the webpage.  
+The purpose of this webpage is to validate an Employee's ID and password without using REGEX.  Once the credentials are validated, you may login.  Next the webpage will display any the times the employee has clocked in/out for work.  The page will update in real time when you clock in/out.  Though it's not connected to any database, the submit button is included to refresh the webpage.  This project is meant to demonstrate how to connect HTML, CSS, and basic JavaScript files for a basic form responding to user interaction.  
 
 ## Motivation
 
-I am still learning how to use JavaScript with CSS and HTML.  This was a learning project for one of my classes.  It's as close to a real world example which our instructor provided for us. 
+I am still learning how to use JavaScript with CSS and HTML elements.  This was a learning project for one of my classes.  It's as close to a real world example I have been presented with to this point in my education, which was provided by my instructor. 
 
 ## Installation
 
-To get my files to work, you need to download everything in the repository and save them in the same folder location.  My webpage uses both the JavaScript files and the CSS file.  
+To get my files to work, you need to download everything in the repository, minus the pictures, and save them in the same folder location.  My webpage uses both JavaScript files and the CSS file.  
 
 ## Tests
 
