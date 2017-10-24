@@ -1,3 +1,4 @@
+
 # Employee Time Keeper
 
 ## Synopsis
@@ -14,7 +15,9 @@ To get my files to work, you need to download everything in the repository and s
 
 ## Tests
 
-I tested this program as the different fields/buttons were added to the webpage.  Images will be added soon
+I tested this program as the different fields/buttons were added to the webpage.
+![Settings Window](
+https://github.com/tiptonspiderj/timekeeper/blob/master/Validation.PNG)
 
 ## Contributors
 
