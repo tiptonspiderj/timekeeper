@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Employee Time</title>
+      <!--EmployeeTimeKeeper.html
+      
+         Author: Jeremy Tipton  
+         Date: 10/24/2017    
+         HTML5 and CSS3 Homework Midterm Project SDEV 250
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+	  <script src="Midterm_project.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="styles1.css">      
+   </head>
+   <body>
+      <div class="container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+         <header>
+            <h1><a>Tipton's Employee Time Recorder</a></h1>
+         </header>         
+         <article id="contentstart">
+            <h2>Login Credentials</h2>
+			<form method="POST">
+			<fieldset class="logininfo">
+				<legend>Login Information</legend>
+				<fieldset class="login">
+					<label for="employeeinput" id="employeeinputs">
+							Employeed ID # : 
+							<input type="text" oninput="validateemployeeinput()" name="name" id="employeeinput" placeholder="123456"><label id="employeeinputPrompt"></label>
+						</label>
+						</br>
+						<label for="passwordinput"><br />
+							Password : 
+							<input type="password" oninput="validatepasswordinput()" name="password" id="passwordinput"  placeholder="P@s$W0rD!" disabled><label id="passwordinputPrompt"></label>
+						</label>
+						<br></br>
+						<button id="login" type="button" onclick="enabletimeFunction()" disabled>Login</button>						
+				</fieldset>
+			</fieldset>
+			<fieldset class="clockinoutinfo">
+				<legend>Employee Clock-in/out </legend>
+					<fieldset class="Clock-in">
+						<button id="clockin" type="button" onclick="gettimein()" disabled>Clock-in</button>
+						<button id="clockout" type="button" onclick="gettimeout()" disabled>Clock-out</button>
+					</fieldset>										
+			</fieldset>
+			<fieldset class="tables">
+			<table id="myTable">
+				<tr>
+					<th>Date</th>
+					<th>Time</th>
+					<th>In/Out</th>
+				</tr>
+			</table>
+			</fieldset>
+			<fieldset class="additionalinfo">
+				<legend>Additional Information</legend>
+					<label for="feedback">
+					Feedback, special requests, or other information
+						<textarea name="feedback" id="feedback" rows="4"> </textarea>
+					</label>
+			</fieldset>
+			<fieldset class="submit">
+					<input type="submit" id="submit" value="Submit">
+				</fieldset>
+			</form>
+         </article>
+         <footer>
+           <p>564 Natoma St. &#8226; San Francisco, CA 94103 &#8226; (415) 555-8378</p>
+         </footer>
+      </div>
+   </body>
+</html>
